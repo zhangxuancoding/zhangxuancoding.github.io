@@ -9,7 +9,7 @@
     
     <title>
         
-            归档 |
+            C++Primer01 |
         
         Zhang&#39;s Blog
     </title>
@@ -75,7 +75,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/archives"
                             >
                                 时间轴
@@ -135,7 +135,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/archives">时间轴</a>
                 </li>
             
@@ -175,45 +175,182 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="archive-container ">
-        
-<div class="archive-list-container">
-    
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2023</span>
-                <span class="archive-year-post-count">[3]</span>
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">C++Primer01</span>
             </div>
-            <ul class="article-list">
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://raw.githubusercontent.com/zhangxuancoding/picture/main/img/202305031855243.PNG">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">Zhang</span>
+                            
+                                <span class="author-label">作者</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-05-08 19:56:11</span>
+        <span class="mobile">2023-05-08 19:56</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-05-08 19:58:16</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
                 
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2023/05/08/C-Primer01/"
-                        >C++Primer01</a>
-                        <span class="article-date">05-08</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2023/05/05/Datastructure/"
-                        >Introduce to Datastructure</a>
-                        <span class="article-date">05-05</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2023/05/04/cpp/"
-                        >cpp</a>
-                        <span class="article-date">05-04</span>
+                    <li>
+                        <a href="/categories/c/">c++</a>&nbsp;
                     </li>
                 
             </ul>
-        </section>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/c-primer/">c++primer</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
     
 </div>
 
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <p>一种数据类型不仅定义了数据元素的内容，还定义了这类数据上可以进行的运算。</p>
+<p>在执行一个程序时，Windows上可以忽略其扩展名，linux上不可以。</p>
+<p>我们可以通过编译器的参数设置，来进行编译行为的选择，GNU编译器上使用-wall，微软编译器使用&#x2F;W4</p>
+<p>流（<code>stream</code>）表达的是随着时间的推移，字符是顺序生成和消耗的。</p>
+<p><code>iostream</code> 包含 <code>istream</code> 和<code> ostream</code> 两个基础类型。</p>
+<p>标准库一共定义了四个基础的IO对象<code> cin cout cerr clog</code></p>
+<p><code>&lt;&lt;</code> 运算符接受两个运算对象，左侧的运算对象必须是一个ostream对象，右侧的运算对象则是要打印的值。</p>
+<p><code>&gt;&gt;</code> 运算符接受两个运算对象，左侧的运算对象必须是一个istream对象，右侧的运算对象则是要打印的值。</p>
+<p>标准库定义了不同版本的输入输出运算符来处理这些不同的类型的运算对象。</p>
+<p>文件重定向可以使我们直接从文件导向文件。</p>
+<p>endl是一个被称为操纵符的特殊值，效果是结束当行，并将与设备关联的缓冲区中的内容刷到设备中。缓冲刷新可以保证到目前为止的程序所产生的所有输出都真正写到输出流中，而不是仅停留在内存中等待写入流。</p>
+<p><code>::</code>域命名运算符前缀可以指定域命名空间，命名空间可以帮助哦我们避免不经意间的名字定义冲突，以及使用库中相同的名字导致的冲突，标准库所有的名字都在命名空间std中。</p>
+<p>注释可以分为单行注释和界定符对注释，当界定符对注释跨越多行时，我们采用注释内每一行都以一个星号开头，从而指出整个范围都是多行注释的一部分。</p>
+<p>界定符对注释不可以嵌套，在调试时需要注释掉一些代码，最好使用单行注释来避免嵌套错误。</p>
+<p>多种控制流语句可以让我们写出不同的执行路径，选择语句可以让程序执行条件执行。</p>
+<p>当我们使用一个istream对象作为条件时，效果是检测流的状态，如果流是有效的，那么检测成功。如果遇到文件结束符，或无效输入，那么检测失败。</p>
+<p>编译器的检查是检查形式上的错误，一般有，语法错误，类型错误（命名空间和标识符拼写），声明错误。</p>
+<p>错误信息经常是一个行号和一句简述，由于单个错误具有传递效应，我们最好在每修正一个错误后就立即重新编译代码。（编辑-编译-调试）</p>
+<p>c++的程序风格有多种，我们一旦选择了风格就应该坚持下来。</p>
+<p>我们通过定义一个类来定义自己的数据结构，类定义了一个类型，以及与其关联的一组数据操作。</p>
+<p>如果使用一个类，我们不必关系它是如何实现的，只需要知道类对象可以执行什么操作。</p>
+<p>点运算符只能用于类类型的对象，其左侧运算对象必须是一个类类型的对象，右侧运算对象必须是该类型对象的一个成员名（成员函数有时候也被称为方法），运算结果为右侧运算对象指定的成员。</p>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    
+<div class="article-copyright-info-container">
+    <ul class="copyright-info-content">
+        <li class="post-title">
+            <span class="type">本文标题</span>：<span class="content">C++Primer01</span>
+        </li>
+        <li class="post-author">
+            <span class="type">本文作者</span>：<span class="content">Zhang</span>
+        </li>
+        <li class="post-time">
+            <span class="type">创建时间</span>：<span class="content">2023-05-08 19:56:11</span>
+        </li>
+        <li class="post-link">
+            <span class="type">本文链接</span>：<span class="content">2023/05/08/C-Primer01/</span>
+        </li>
+        <li class="post-license">
+            <span class="type">版权声明</span>：<span class="content">本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！</span>
+        </li>
+    </ul>
+    <div class="copy-copyright-info flex-center tooltip" data-content="复制版权信息" data-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
     </div>
 </div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/c-primer/">#c++primer</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/05/05/Datastructure/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Introduce to Datastructure</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
 
                 
             </div>
@@ -253,6 +390,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -321,6 +475,14 @@
 
 
 <div class="post-scripts">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/post-helper.js"></script>
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/libs/anime.min.js"></script>
+        
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.6.1/source/js/toc.js"></script>
+        
     
 </div>
 
